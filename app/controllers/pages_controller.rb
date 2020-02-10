@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+include CommonActions
   def index
   end
   
