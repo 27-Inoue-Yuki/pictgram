@@ -1,5 +1,5 @@
 module CommonActions
-  ectend ActiveSupport::Concern
+  extend ActiveSupport::Concern
   
   def set_categories
     @categories = Category.all

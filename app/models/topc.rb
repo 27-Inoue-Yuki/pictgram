@@ -1,0 +1,2 @@
+class Topc < ApplicationRecord
+end
