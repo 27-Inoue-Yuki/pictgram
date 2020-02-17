@@ -69,5 +69,5 @@ gem 'jquery-rails'
 gem 'bootstrap-sass'
 gem 'bcrypt'
 gem 'carrierwave'
-
-
+gem 'material_icons'
+gem 'materialize-sass'

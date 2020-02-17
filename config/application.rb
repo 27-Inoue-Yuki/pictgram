@@ -18,3 +18,5 @@ module Pitgram
     # the framework and any gems in your application.
   end
 end
+
+require 'material_icons'
