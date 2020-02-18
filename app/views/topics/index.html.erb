@@ -19,10 +19,13 @@
         <% end %>
           <%= topic.favorites.count %>
           
+        <% if topic.talking_users.include?(current_user) %>
+          <%= link_to talking_path(topic_id: topic.id), method: :post do %>
           <%= image_tag 'icons/comment.png',class:'topic-index-icon' %>
-          <p class="topic-text">
-            <%= topic.description %>
-          </p>
+          <% else %>
+        <% end %>
+         <p class="topic-text"><%= topic.description %></p>
+          
         </div>
       </div>
     </div>
