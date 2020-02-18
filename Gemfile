@@ -71,3 +71,7 @@ gem 'bcrypt'
 gem 'carrierwave'
 gem 'material_icons'
 gem 'materialize-sass'
+gem 'counter_culture', '~> 1.8'
+
+group :development,:test do
+end
