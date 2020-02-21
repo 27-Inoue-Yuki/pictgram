@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   
   root 'pages#index'
   root 'pages#comment'
+  get 'pages/comment'
   get 'pages/help'
 
   get  '/login', to: 'sessions#new'
