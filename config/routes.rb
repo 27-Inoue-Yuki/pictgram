@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
+  get 'pages/comment'
   get 'likes/create'
   get 'likes/destroy'
   get 'topics/new'
   get 'sessions/new'
   
   root 'pages#index'
+  root 'pages#comment'
   get 'pages/help'
 
   get  '/login', to: 'sessions#new'
