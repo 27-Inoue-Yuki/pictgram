@@ -19,8 +19,14 @@
         <% end %>
         <%= topic.favorites.count %>
 
+        <%= link_to pages_comment_path(topic_id: topic.id), method: :get do %>
           <%= image_tag 'icons/comment.png',class:'topic-index-icon' %>
+        <% end %>
+          
          <p class="topic-text"><%= topic.description %></p>
+         
+         
+         
         </div>
       </div>
     </div>
