@@ -2,8 +2,10 @@
  <div class="takasa_tyousei">
    <h1 class="text-white">自由にコメントしてください💛</h1>
  </div>
-    <form action="" method="post">
-        <P><input type="text" name="name" size="70px"></P>
-        <p><input type="button" value="送信する" id="button2" size="15px"></p>
-    </form>
+  <%= form_for @comment do |f| %>
+    <div class ="form-group">
+      <%= f.text_area :comment,class:'form-control' %>
+    </div>
+    <%= f.submit '投稿', class:'btn btn-black btn-block' %>
+  <% end %>
 </div>
