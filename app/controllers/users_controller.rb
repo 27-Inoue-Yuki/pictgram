@@ -3,7 +3,7 @@ include CommonActions
   def new
     @user = User.new
   end
-  params.require(:user).permit(:image)
+  # params.require(:user).permit(:image)
   
   def create
     @user = User.new(user_params)

@@ -17,7 +17,7 @@
           <% else %>
           <%= image_tag 'icons/kohacu.com_001228_20180528-300x300.png',class:'topic-index-icon' %>
         <% end %>
-          
+          <%= topic.favorites.count %>
           
           <%= image_tag 'icons/comment.png',class:'topic-index-icon' %>
           <p class="topic-text">
