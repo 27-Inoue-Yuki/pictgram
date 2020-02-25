@@ -1,0 +1,15 @@
+<div class ="comment-index-wrapper">
+  <div class ="container">
+　 <div class="top-hero-wrapper text-center">
+  　<div class="takasa_tyousei">
+     <h1 class="text-white">自由にコメントしてください💛</h1>
+    </div>
+   　　  <%= form_for @comment do |f| %>
+     　　<div class ="form-group">
+      　　<%= f.text_area :comment,class:'form-control' %>
+    　　</div>
+    　　<%= f.submit '投稿', class:'btn btn-black btn-block' %>
+  　　<% end %>
+　  </div>
+　</div>
+</div>
