@@ -1,4 +1,8 @@
 class CommentsController < ApplicationController
+  def index
+    @topics = Comment.all　　#.includes(:favorite_users)
+  end
+  
   def new
     @comment = Comment.new
   end
