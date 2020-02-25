@@ -1,5 +1,6 @@
 class SessionsController < ApplicationController
-include CommonActions
+  include CommonActions
+
   def new
   end
   

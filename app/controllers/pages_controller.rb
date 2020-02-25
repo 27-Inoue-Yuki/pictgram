@@ -1,8 +1,4 @@
 class PagesController < ApplicationController
-include CommonActions
-  def index
-  end
-  
-  def help
+  def comment
   end
 end
