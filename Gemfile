@@ -43,6 +43,7 @@ group :development, :test do
   gem 'pry-doc'
   gem 'pry-byebug'
   gem 'pry-stack_explorer'
+  gem 'rubocop', '0.79.0'
 end
 
 group :development do

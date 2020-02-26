@@ -1,0 +1,16 @@
+AllCops:
+  TargetRubyVersion: 2.6
+  Exclude:
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+    - 'test/**/*'
+    - 'spec/**/*'
+    - 'bin/**/*'
+    - 'vendor/**/*'
+
+Style/Documentation:
+  Enabled: false
+Metrics/LineLength:
+  Max: 160
+
