@@ -49,6 +49,9 @@ test:
 #
 production:
   <<: *default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
   database: pitgram_production
   username: pitgram
   password: <%= ENV['PITGRAM_DATABASE_PASSWORD'] %>
