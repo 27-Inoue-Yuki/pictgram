@@ -11,7 +11,6 @@ class CommentsController < ApplicationController
 
   def create
     @comment = Comment.new(comment_params)
-
     if @comment.save
       redirect_to topics_path, success: '投稿に成功しました'
     else
@@ -23,6 +22,6 @@ class CommentsController < ApplicationController
   private
 
   def comment_params
-    params.require(:comment).permit(:comment)
+    params.require(:comment).permit(:comment, :topic_id)
   end
 end
