@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class UsersController < ApplicationController
-  include CommonActions
+  #include CommonActions
   def new
     @user = User.new
   end

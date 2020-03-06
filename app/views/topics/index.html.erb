@@ -23,9 +23,15 @@
             <%= image_tag 'icons/comment.png',class:'topic-index-icon' %>
           <% end %>
           <h2>コメント</h2>
+<<<<<<< HEAD
           <% topic.comments.each do |topic_comment|%>
             <p class="topic-text">
               <%= topic_comment.comment %>
+=======
+          <% topic.comments.each do |com|%>
+            <p class="topic-text">
+              <%= com.comment %>
+>>>>>>> feature/PostgreSQL
             </p>
             <% end %>
         </div>

@@ -50,5 +50,13 @@ test:
 production:
   <<: *default
   adapter: postgresql
+<<<<<<< HEAD
   encoding: unicode 
   pool: 5
+=======
+  encoding: unicode
+  pool: 5
+  database: pitgram_production
+  username: pitgram
+  password: <%= ENV['PITGRAM_DATABASE_PASSWORD'] %>
+>>>>>>> feature/PostgreSQL
