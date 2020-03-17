@@ -5,7 +5,6 @@ class User < ApplicationRecord
   SPECIAL_EMAIL = /\A[\w+-.]+@[\w+-.]+[\w+-.]+\z/i.freeze
   validates :email, presence: true, format: { with: SPECIAL_EMAIL }
   validates :password, format: { with: /\A(?=.*?[a-z])(?=.*?\d)[a-z\d]{8,32}+\z/i }
-  mount_uploader :image, ImageUploader
 
   has_secure_password
   has_many :topics
