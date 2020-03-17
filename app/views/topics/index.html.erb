@@ -17,17 +17,17 @@
         <% else %>
           <%= image_tag 'icons/kohacu.com_001228_20180528-300x300.png',class:'topic-index-icon' %>
         <% end %>
-        
-        <%= topic_favorite_count(topic)%>
-
-        <%= link_to new_comment_path(topic_id: topic.id), method: :get do %>
-          <%= image_tag 'icons/comment.png',class:'topic-index-icon' %>
-        <% end %>
+          <%= topic.favorites.count %>
           
-         <p class="topic-text"><%= topic.description %></p>
-         
-         
-         
+          <%= link_to new_comment_path(topic_id: topic.id) do %>
+            <%= image_tag 'icons/comment.png',class:'topic-index-icon' %>
+          <% end %>
+          <h2>コメント</h2>
+          <% topic.comments.each do |topic_comment|%>
+            <p class="topic-text">
+              <%= topic_comment.comment %>
+            </p>
+            <% end %>
         </div>
       </div>
     </div>
